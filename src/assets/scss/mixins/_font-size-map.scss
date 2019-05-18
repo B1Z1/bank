@@ -1,0 +1,7 @@
+@mixin font-size-map($type){
+    @each $name, $size in $font-sizes{
+        @if $type == $name{
+            font-size: $size;
+        }
+    }
+}

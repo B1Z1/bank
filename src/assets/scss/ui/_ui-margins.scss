@@ -1,0 +1,14 @@
+@each $size in $gutters{
+    .ui-mt#{$size}{
+        margin-top: $size;
+    }
+    .ui-mr#{$size}{
+        margin-right: $size;
+    }
+    .ui-mb#{$size}{
+        margin-bottom: $size;
+    }
+    .ui-ml#{$size}{
+        margin-left: $size;
+    }
+}

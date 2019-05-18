@@ -1,0 +1,5 @@
+@each $name, $color in $background-colors{
+    .ui-backcolor--#{$name}{
+        background-color: $color;
+    }
+}

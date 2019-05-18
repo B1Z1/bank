@@ -1,3 +1,16 @@
-.work{
-    background: black;
+html, body{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: $main-size;
+    line-height: $main-size * 1.5;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+@for $i from 1 through 6{
+    h#{$i}{
+        @include font-size-map(h#{$i});
+    }
 }

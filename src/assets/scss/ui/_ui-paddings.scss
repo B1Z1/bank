@@ -1,0 +1,14 @@
+@each $size in $gutters{
+    .ui-pt#{$size}{
+        padding-top: $size;
+    }
+    .ui-pr#{$size}{
+        padding-right: $size;
+    }
+    .ui-pb#{$size}{
+        padding-bottom: $size;
+    }
+    .ui-pl#{$size}{
+        padding-left: $size;
+    }
+}

@@ -1,0 +1,12 @@
+@mixin color-map($name, $option){
+    $trigger: 'true';
+    @each $name, $color in $colors{
+        @if $type == $name{
+            $trigger: 'false';
+            $option: $color;
+        }
+    }
+    @if ( $trigger == 'true' ){
+        $option: $name;
+    }
+}

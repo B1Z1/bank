@@ -1,0 +1,48 @@
+.col-mbl-1, .col-mbl-2, .col-mbl-3, .col-mbl-4, .col-mbl-5, .col-mbl-6, .col-mbl-7, .col-mbl-8, .col-mbl-9, .col-mbl-10, .col-mbl-11, .col-mbl-12,  
+.col-tab-1, .col-tab-2, .col-tab-3, .col-tab-4, .col-tab-5, .col-tab-6, .col-tab-7, .col-tab-8, .col-tab-9, .col-tab-10, .col-tab-11, .col-tab-12,  
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,  
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+    position: relative;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: $main-gutter;
+    padding-left: $main-gutter;
+}
+
+/* ---> : Mobile Columns : <--- */
+@for $i from 1 through 13{
+    .col-mbl-#{$i}{
+        flex: 0 0 $i / 12 * 100%;
+        max-width: $i / 12 * 100%;
+    }
+} 
+
+/* ---> : Mobile Columns : <--- */
+@for $i from 1 through 13{
+    @media only screen and ( min-width: $bpoint_tab ){
+        .col-tab-#{$i}{
+            flex: 0 0 $i / 12 * 100%;
+            max-width: $i / 12 * 100%;
+        }
+    }
+} 
+
+/* ---> : Desktop Columns : <--- */
+@for $i from 1 through 13{
+    @media only screen and ( min-width: $bpoint_desk ){
+        .col-md-#{$i}{
+            flex: 0 0 $i / 12 * 100%;
+            max-width: $i / 12 * 100%;
+        }
+    }
+} 
+
+/* ---> : Desktop Columns : <--- */
+@for $i from 1 through 13{
+    @media only screen and ( min-width: $bpoint_full ){
+        .col-lg-#{$i}{
+            flex: 0 0 $i / 12 * 100%;
+            max-width: $i / 12 * 100%;
+        }
+    }
+} 

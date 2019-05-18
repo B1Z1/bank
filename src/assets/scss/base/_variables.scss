@@ -1,0 +1,36 @@
+/* ---> :Main Options: <--- */
+$main-size: 20px;
+$main-gutter: 16px;
+
+/* ---> :Breakpoints: <--- */
+$bpoint-tab: 768px;
+$bpoint-desk: 1024px;
+$bpoint-full: 1600px;
+
+/* ---> :Gutters: <--- */
+$gutters: (8px, 16px, 32px, 64px, 128px, 256px);
+
+/* ---> :Colors: <--- */
+$background-colors: (
+    main: #1C6E1A,
+    sidebar: linear-gradient(to bottom, #2AA526 0%, #1C6E1A 60%, #0D300C 100%),
+    cblack: black,
+    cwhite: white
+);
+
+/* ---> :Background Colors: <--- */
+$colors: (
+    main: #1C6E1A,
+    cblack: black,
+    cwhite: white
+);
+
+/* ---> :Font Sizes: <--- */
+$font-sizes: (
+    h1: 3rem,
+    h2: 2.4rem,
+    h3: 2.2rem,
+    h4: 2rem,
+    h5: 1.6rem,
+    h6: 1.4rem
+);

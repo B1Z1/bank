@@ -2,7 +2,25 @@
 @import "../../../node_modules/reset-css/sass/reset";
 
 /* ---> :Base Styles: <--- */
+@import "./mixins/font-size-map";
+@import "./mixins/color-map";
 @import "./base/variables";
 @import "./base/base";
+@import "./base/columns";
+
+/* ---> :Flex: <--- */
+@import "./flex/flex";
+
+/* ---> :Float: <--- */
+@import "./floats/float";
 
 /* ---> :Atoms: <--- */
+@import "./atoms/a-link";
+@import "./atoms/a-list";
+
+/* ---> :UI: <--- */
+@import "./ui/ui-colors";
+@import "./ui/ui-backgrounds";
+@import "./ui/ui-margins";
+@import "./ui/ui-paddings";
+@import "./ui/ui-fontsize";
