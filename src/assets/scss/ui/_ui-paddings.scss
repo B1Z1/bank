@@ -1,4 +1,7 @@
 @each $size in $gutters{
+    .ui-p#{$size}{
+        padding: $size;
+    }
     .ui-pt#{$size}{
         padding-top: $size;
     }
@@ -11,4 +14,9 @@
     .ui-pl#{$size}{
         padding-left: $size;
     }
+}
+
+.ui-p--resetrow{
+    padding-right: 0;
+    padding-left: 0;
 }

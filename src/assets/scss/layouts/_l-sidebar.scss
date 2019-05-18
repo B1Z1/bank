@@ -4,5 +4,9 @@ Layout Sidebar Start
 __________*/
 
 .l-sidebar{
-    background: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow: auto;
 }

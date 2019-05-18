@@ -1,4 +1,7 @@
 @each $size in $gutters{
+    .ui-m#{$size}{
+        margin: $size;
+    }
     .ui-mt#{$size}{
         margin-top: $size;
     }

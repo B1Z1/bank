@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h1>asd</h1>
+		<sidebar></sidebar>
 	</div>
 </template>
 
